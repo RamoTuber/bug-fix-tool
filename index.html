@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="de">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<meta http-equiv="Content-Language" content="en-US">
+	<title>Unicode Fixer - EEL</title>
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" id="theme" type="text/css" href="styles/style.css">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+</head>
+<body>
+
+	<div class="content-wrapper">
+		<div class="theme">
+			<span class="light" title="Light Theme"></span>
+			<span class="dark" title="Dark Theme"></span>
+		</div>
+		<div class="thesaurus">
+			<div class="codes_wrapper">
+				<div class="color_codes">
+					<h2>Color Codes</h2>
+					<span class="corrected color" id="0"></span>
+					<span class="repetitive color" id="5"></span>
+					<span class="symbols color" id="1"></span>
+					<span class="lengths color" id="2"></span>
+					<span class="same_char_reps color" id="3"></span>
+					<span class="same_cons_vow color" id="4"></span>
+
+					<div class="col_def">
+						<div class="symbols_def color_definition" id="desc_0">
+							<span class="corrected"></span>
+							<p class="desc">This color represents all names that contain any of the symbols defined in the UTF codes section below that have been corrected.</p>
+						</div>
+
+						<div class="symbols_def color_definition" id="desc_5">
+							<span class="repetitive"></span>
+							<p class="desc">This color represents all names that contain any consecutive repetitive alphabet or special character from <strong>German</strong> and <strong>Russian</strong> Language.</p>
+						</div>
+
+						<div class="symbols_def color_definition" id="desc_1">
+							<span class="symbols"></span>
+							<p class="desc">Fields with names containing any of the below letters special symbols are removed</p>
+							<p><strong>#!$%^&*\d()+~=`{}\[\];'?\/ï¿™</strong></p>
+						</div>
+
+						<div class="lengths_def color_definition" id="desc_2">
+							<span class="lengths"></span>
+							<p class="desc">Names with less then or equal to two characters, and names with more than or equal to 30 characters are removed</p>
+							<p>example: <strong>ab</strong> or <strong>Markus dedsel farughat mohammed</strong></p>
+						</div>
+
+						<div class="same_char_reps_def color_definition" id="desc_3">
+							<span class="same_char_reps"></span>
+							<p class="desc">Names with consecutively repeating character <strong>three</strong> or more times are removed.</p>
+							<p>example: <strong>aaa</strong> or <strong>bbb</strong></p>
+						</div>
+
+						<div class="same_cons_vow_def color_definition" id="desc_4">
+							<span class="same_cons_vow"></span>
+							<p class="desc">Names with consecutively repeating vowels or consonants <strong>four</strong> or more times are removed.</p>
+							<p>example: <strong>aeia</strong> or <strong>dfdg</strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="UTF_codes">
+					<h2 id="utf_title">UTF Codes</h2>
+					<p>The below are all the symbols found in names lists of the German and Russian language and converted using UTF-8 character encoding</p>
+					<br>
+					<p><strong>Ã€ | Ã | Ã‚ | Ãƒ | â€œ | Â« | Â± | â€š | â€¢ | Â¿ | Å“ | â€° | Â½ | Â» | Â© | Â¾ | Â¤ | â€¦ | Å¸ | Â° | Â® | Â¸ | Â¡ | Â³ | Â¹ | Âµ | Â¼ | â‚¬ | Â¶ | â€ | â€¢ | Ã„ | Ã… | Ã† | Ã‡ | Ãˆ | Ã‰ | ÃŠ | Ã‹ | â€“ | ÃŒ | ÃŽ | Ã‘ | Ã’ | Ã• | Ã– | Ã— | Ã˜ | Ã™ | Ãš | Ã› | Ãœ | Ãž | ÃŸ | Ã¡ | Ã¢ | Ã£ | Ã¤ | Ã¥ | Ã¦ | Ã§ | Ã¨ | Ã© | Ãª | Ã« | Ã¬ | Ã® | Ã¯ | Ã° | Ã± | Ã² | Ã³ | Ã´ | Ãµ | Ã¶ | Ã· | Ã¸ | Ã¹ | Ãº | Ã» | Ã¼ | Ã½ | Ã¾ | Ã¿ | Ð˜ | Ð³ | Ð¾ | Ñ€ | Ñœ | Ðš | Ð½ | Ñ | Ð° | Ñ‚ | Ð¸ | Ñ… | ÑŒ | Ð’ | Ð» | Ð´ | Ð¼ | Ð² | Ñ‡ | Ð· | Ðµ | Ñƒ | Ð¯ | Ðž | ÐŸ | Ð¥ | Ð | Ð¹ | Ð± | Ðº | Ð• | Ð¡ | Ð™ | Ð¿ | Ð® | Ð§ | Ð£ | ÑŽ | Ð¶ | Ð“ | Ñ† | Ð— | Ð¤ | Ð› | Ð¦ | Ñ‹ | Ñˆ | Ðœ | Ð– | Ñ„ | Ñ‰ | Ð¢ | Ð” | Ð¨ | Ð« | Ð© | Ð‘ | Ð  | Ð | Ð­ | Ñ‘ </strong></p>
+				</div>
+			</div>
+
+			<div class="numprocedures">
+				<a target="_blank" href="http://docs.sublimetext.info/en/latest/search_and_replace/search_and_replace_overview.html">How to run a regular expression procedure in sublime text</a>
+				<a target="_blank" href="https://www.sublimetext.com/">Download sublime text</a>
+
+				<p id="num_info">The below procedures are required for the fixation of <strong>German</strong> and <strong>Swedish</strong> mobile numbers before sending any SMS promotion.</p>
+				<img src="./assets/de.png">
+				<ul id="de_list">
+					<li>Remove digit 0 from beginning of string: <strong class="regex">^0</strong></li> 
+					<li>Remove any non-digit character: <strong class="regex">(?!(?:\n|[0-9])).</strong></li>
+					<li>Change numbers starting 4949 to 49: <strong class="regex">^4949</strong> R.W <strong class="regex">49</strong></li>
+					<li>Remove numbers not starting with 49 or 1: <strong class="regex">^(?!(?:\n|49|1)).*\s</strong></li>
+					<li>Convert numbers starting 490 and start them with 49: <strong class="regex">^490</strong> R.W <strong class="regex">49</strong></li>
+					<li>Insert combination 49 to all numbers starting with 1: <strong class="regex">^1</strong> R.W <strong class="regex">491</strong></li>
+					<li>Remove all numbers not starting with combination 491: <strong class="regex">^(?!(?:\n|491)).*\s</strong></li>
+					<li>Remove all numbers of 14 or more digits: <strong class="regex">.{14}(.*)</strong></li>
+					<li>Remove all numbers of 9 or less digits: <strong class="regex">^\w{0,9}$</strong></li>
+					<li>Remove all empty new lines: <strong class="regex">^\n</strong></li>
+				</ul>
+
+				<img src="./assets/se.png">
+				<ul id="se_list">
+					<li>Remove digit 0 from beginning of string: <strong class="regex">^0</strong></li> 
+					<li>Remove any non-digit characters: <strong class="regex">(?!(?:\n|[0-9])).</strong></li>
+					<li>Change numbers starting 4646 to 46: <strong class="regex">^4646</strong> R.W <strong class="regex">46</strong></li>
+					<li>Remove numbers not starting with 46: <strong class="regex">^(?!(?:\n|46)).*\s</strong></li>
+					<li>Insert combination 46 to all numbers starting 460: <strong class="regex">^460</strong> R.W <strong class="regex">46</strong></li>
+					<li>Remove all numbers of 14 or more digits: <strong class="regex">.{12}(.*)</strong></li>
+					<li>Remove all numbers of 9 or less digits: <strong class="regex">^\w{0,9}$</strong></li>
+					<li>Remove all empty new lines: <strong class="regex">^\n</strong></li>
+				</ul>
+
+				<img src="./assets/fi.png">
+				<ul id="fi_list">
+					<li>Remove digit 0 from beginning of string: <strong class="regex">^0</strong></li> 
+					<li>Remove any non-digit characters: <strong class="regex">(?!(?:\n|[0-9])).</strong></li>
+					<li>Change numbers starting 358358 to 358: <strong class="regex">^358358</strong> R.W <strong class="regex">358</strong></li>
+					<li>Remove numbers not starting with 358, 1, 4, or 5: <strong class="regex">^(?!(?:\n|358|1|4|5)).*\s</strong></li>
+					<li>Insert combination 3581 to all numbers starting with 1: <strong class="regex">^1</strong> R.W <strong class="regex">3581</strong></li>
+					<li>Insert combination 35814 to all numbers starting with 4: <strong class="regex">^4</strong> R.W <strong class="regex">3584</strong></li>
+					<li>Insert combination 35815 to all numbers starting with 5: <strong class="regex">^5</strong> R.W <strong class="regex">3585</strong></li>
+					<li>Remove all numbers of 13 or more digits: <strong class="regex">.{13}(.*)</strong></li>
+					<li>Remove all numbers of 9 or less digits: <strong class="regex">^\w{0,11}$</strong></li>
+					<li>Remove all empty new lines: <strong class="regex">^\n</strong></li>
+				</ul>
+			</div>
+		</div>
+		
+		<header>
+			<div class="links">
+				<span class="codes_link">UBF Codes</span>
+				<span class="numbers">Numbers Procedures</span>
+			</div>
+			<h1>WNG - Unicode Bug Fixer</h1>
+			<p class="hint">paste the column with incorrect unicode in names from your excel sheet into the text area</p>
+			<small>REFRESH THE PAGE FOR EVERY LIST TO BE GENERATED</small>
+		</header>
+
+		<div class="receiver">
+			<textarea autofocus="autofocus" id="receiver"></textarea>
+
+			<div class="action">
+				<span class="action_btn" id="down">Generate List</span>
+				<a class="action_btn" id="refresh" href="./index.html">Refresh page & Generate another list</a>
+				<button id="copy-button" data-clipboard-target="#names-list">copy to clipboard</button>
+			</div>
+
+			<div class="orig-list-wrapper">
+			  <h4>Generated List with unicode errors</h4>
+			  <ol class="orig-list"></ol>
+			</div>
+
+			<div class="corrections-wrapper">
+			  <h4>Corrected Names</h4>
+			  <ul id="results"></ul>
+			  <ul id="correct-names" class="corrections"></ul>
+			</div>
+
+			<div class="copy_board">
+			  <textarea class="test"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scripts/jquery1.3.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+</body>
+</html>
